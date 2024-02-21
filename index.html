@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind In a Branch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'yellow': '#e5f2c9',
+            'brown-light': '#8c705f',
+            'brown': '#8c705f',
+            'brown-dark': '#1f0318',
+            'black': '#1e1a1d',
+          },
+
+          screens: {
+            'sm': '570px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px',
+          },
+
+          spacing: {
+            'm': '5vh',
+            'p': '15vh',
+          }
+
+
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-yellow">
+  <video src="./Images&Videos/ChocolateMaking.mp4" id="backgroundVideo" class=" h- 45 absolute inline-flex overflow-visible object-cover size-max " autoplay loop muted></video>
+  <header>
+
+    <nav class="flex-wrap flex-row absolute list-none text-sm text-yellow">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>OUR WORK</li>
+      <li>CONTACT US</li>
+    </nav>
+  </header>
+</body>
+</html>

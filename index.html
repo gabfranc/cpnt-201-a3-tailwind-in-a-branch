@@ -11,10 +11,11 @@
         extend: {
           colors: {
             'yellow': '#e5f2c9',
-            'brown-light': '#8c705f',
+            'brown-light': '#B69889',
             'brown': '#8c705f',
-            'brown-dark': '#1f0318',
+            'brown-dark': '#7D4007',
             'black': '#1e1a1d',
+            'white' : '#FDF8F4',
           },
 
           screens: {
@@ -44,42 +45,70 @@
     }
   </script>
 </head>
-<body class="max-h-fit bg-yellow overscroll-y-visible overscroll-x-none overflow-x-hidden screens">
+<body class="leading-loose max-h-fit bg-yellow overscroll-y-visible overscroll-x-none overflow-x-hidden screens">
+  <div>
+    <div id="footerhead" class="text-center jusify-center bg-black text-brown-light font-bold h-16 pt-4 cursor-pointer hover:bg-brown hover:text-black hover:h-20 hover:pt-6 active:bg-brown-light active:text-brown-dark focus:bg-brown">
+      BUY 1 GET 1 FREE SALE!
+    </div>
+  </div>
   <video src="./Images&Videos/ChocolateMaking.mp4" id="backgroundVideo" class=" h- 45 absolute inline-flex overflow-visible object-cover size-max " autoplay loop muted></video>
   <header class="p-5 flex-row gap-10 flex ">
-    <img src="/LOGO/logo.png" class="h-24 ml-5 mt-4 absolute cursor-pointer" alt="LOGO">
+    <img src="/LOGO/logo.png" class="h-24 ml-5 mt-4 absolute cursor-pointer hover:animate-bounce active:animate-spin" alt="LOGO">
     <nav class="flex flex-row float-right justify-self-end relative list-none cursor-pointer pl-40 gap-24 mt-8 ml-36 text-sm text-yellow">
-      <li class="rounded-sm hover:bg-brown-light hover:text-brown-dark hover:pl-4 pt-2 pb-4 h-8 w-20 ">HOME</li>
-      <li class="rounded-sm hover:bg-brown-light hover:text-brown-dark hover:pl-4 pt-2 pb-4 h-8 w-20 ">ABOUT</li>
-      <li class="rounded-sm hover:bg-brown-light hover:text-brown-dark hover:pl-4 pt-2 pb-4 h-8 w-28 ">OUR WORK</li>
-      <li class="rounded-sm hover:bg-brown-light hover:text-brown-dark hover:pl-4 pt-2 pb-4 h-8 w-28 ">CONTACT US</li>
+      <li class="rounded-sm hover:bg-brown-light hover:text-black hover:pl-4 pt-2 pb-4 h-8 w-20 ">HOME</li>
+      <li class="rounded-sm hover:bg-brown-light hover:text-black hover:pl-4 pt-2 pb-4 h-8 w-20 ">ABOUT</li>
+      <li class="rounded-sm hover:bg-brown-light hover:text-black hover:pl-4 pt-2 pb-4 h-8 w-28 ">OUR WORK</li>
+      <li class="rounded-sm hover:bg-brown-light hover:text-black hover:font-bold hover:pl-4 pt-2 pb-4 h-8 w-28 ">CONTACT US</li>
     </nav>
   </header>
 
-  <main class="font-serif ml-32 mt-34 p-auto w-72 justify-center text-center ">
+  <main class="font-serif ml-12 mt-34 p-auto justify-center text-center cursor-pointer">
     <div id="about" class="absolute flex-column mt-96">
 
       
       
-      <div class="m-auto p-auto w-auto relative bg-yellow h-9/12 w-80" id="info">
+      <div class="m-auto p-auto w-auto relative bg-yellow hover:h-7/12 hover:bg-brown hover:text-white hover:font-sans rounded-lg h-9/12 w-80" id="info">
 
         <div id="paragraph" class="justiy-center text-center p-20">
           <h2 class="font-bold text-2xl ">HELLO TO ALL!</h2>
-          <p class="pt-28 pb-16">Welcome to ChocoPhili, the premier chocolate factory nestled in the heart of Quezon City, Manila, Philippines. <br>
+          <p class="pt-28 pb-16 hover:none ">Welcome to ChocoPhili, the premier chocolate factory nestled in the heart of Quezon City, Manila, Philippines. <br>
           Our legacy dates back to the late 1960s, when our business first emerged. Over the years, we've proudly preserved <br>
           our heritage while embracing innovation. In the 2010s, we introduced some of our most modern recipes, seamlessly <br>
           blending contemporary tastes with timeless traditions. As you explore our factory, you'll witness firsthand <br>
           how we keep the old traditions alive while delighting visitors with our innovative creations.</p>
         </div>
-        <div class="relative justify-center align-center inline-block flex gap-16 " id="image" class="fixed m-'9/12">
-          <img src="/Images&Videos/FlavouredChocolates.jpg" class="h-56 w-72 object-fill overflow-visible" alt="ChocolateBonBons">
-          <img src="/Images&Videos/StaffMember.jpg" class="h-56 w-56 object-cover overflow-visible" alt="ChocolateBonBons">
-          <img src="/Images&Videos/ChocolateBonBons.jpg" class="h-56 w-56 object-cover overflow-visible" alt="ChocolateBonBons">
+        <div class="relative justify-center align-center inline-block flex gap-16 " id="image" class=" fixed m-'9/12">
+          <img src="/Images&Videos/FlavouredChocolates.jpg" class="h-80 w-72 object-fill overflow-visible" alt="ChocolateBonBons">
+          <img src="/Images&Videos/StaffMember.jpg" class="h-80 w-72 object-fill overflow-visible" alt="ChocolateBonBons">
+          <img src="/Images&Videos/ChocolateBonBons.jpg" class="h-80 w-72 object-fill overflow-visible" alt="ChocolateBonBons">
         
         </div>
       </div>  
-       <div id="products" class="flex-column relative mt-16 text-2xl">
+       <div id="products" class=" mt-36 text-3xl font-bold hover:h-7/12 hover:bg-brown hover:text-white  hover:font-sans rounded-lg">
       <h2>Our Products</h2>
+
+      <p class="mt-20 text-xl font-normal"> each box of bon bons costs $12.00</p>
+      <div id="boxofChocolates" class="block gap-46 mt-12">
+        <div class="flex gap-36">
+          <div>
+            <img src="/Box of Chocolates.jpg" alt="chockies" class="h-64 w-72 object-fill overflow-visible">
+          </div>
+          <div>
+            <img src="/Branded client gifts - Box of chocolates.jpg" alt="chockies" class="h-64 w-72 object-fill overflow-visible">
+          </div>
+          <div>
+            <img src="/Images&Videos/CocoaBonBons.jpg" alt="chockies" class="h-64 w-72 object-fill overflow-visible">
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <div id="question" class="flex-column">
+      <label for="checkbox">What is your favorite kind of chocolate?</label>
+      <input type="checkbox" name="checkbox" id="checkbox">
 
     </div>
     </div>
